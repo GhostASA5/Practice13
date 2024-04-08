@@ -44,3 +44,44 @@ int main() {
     }
 }
 
+void combineArrays(int data1[], int& size1, int data2[], int size2){
+    size1 += size2;
+    int newData[size1];
+    int sizeFor = size1 - size2;
+    for (int i = 0; i < sizeFor; i++)
+    {
+        newData[i] = data1[i];
+    }
+    int j = 0;
+    for (int i = sizeFor; i < size1; i++)
+    {
+        newData[i] = data2[j];
+        j++;
+    }
+    for (int i = 0; i < size1; i++)
+    {
+        cout << newData[i] << " ";
+    }
+    
+}
+
+void combineArrays(double data1[], int& size1, double data2[], int size2){
+    size1 += size2;
+    double newData[size1];
+    int sizeFor = size1 - size2;
+    for (int i = 0; i < sizeFor; i++)
+    {
+        newData[i] = data1[i];
+    }
+    int j = 0;
+    for (int i = sizeFor; i < size1; i++)
+    {
+        newData[i] = data2[j];
+        j++;
+    }
+    for (int i = 0; i < size1; i++)
+    {
+        cout << newData[i] << " ";
+    }
+    
+}
