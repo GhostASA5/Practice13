@@ -62,7 +62,6 @@ void combineArrays(int data1[], int& size1, int data2[], int size2){
     {
         cout << newData[i] << " ";
     }
-    
 }
 
 void combineArrays(double data1[], int& size1, double data2[], int size2){
